@@ -1,0 +1,7 @@
+.homeTitle {
+  margin: 0 auto;
+  padding: 50px;
+}
+.container {
+  display: flex;
+}

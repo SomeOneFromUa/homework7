@@ -1,0 +1,13 @@
+<div *ngIf="!!post.id" class="container">
+  <mat-card class="post-card">
+    <mat-card-title><h2>{{post.title}}</h2></mat-card-title>
+    <mat-card-content><p>{{post.body}}</p></mat-card-content>
+    <hr>
+    <div [ngSwitch]="toogle">
+      <mat-button-toggle *ngSwitchCase="false" (click)="showComments()">show comments</mat-button-toggle>
+      <div *ngSwitchCase="true && !!comments">
+        <app-comment *ngFor="let comment of comments" [comment]="comment"></app-comment>
+      </div>
+    </div>
+  </mat-card>
+</div>

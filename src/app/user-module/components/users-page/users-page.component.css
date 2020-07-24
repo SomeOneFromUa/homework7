@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  padding: 10px;
+}
+.menu-block {
+  width: 20%;
+}
+.user-block {
+  width: 70%;
+  display: flex;
+  padding: 10px;
+}
+.item {
+  padding: 5px;
+  background-color: blueviolet;
+  border-bottom: white solid 1px;
+  color: white;
+}
