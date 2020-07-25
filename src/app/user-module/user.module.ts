@@ -7,6 +7,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {MatListModule} from '@angular/material/list';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import {MatCardModule} from '@angular/material/card';
+import {HttpClientModule} from "@angular/common/http";
 
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [UserService, UserRosolveService]
 })
